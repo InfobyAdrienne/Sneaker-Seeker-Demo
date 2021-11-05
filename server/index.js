@@ -1,6 +1,9 @@
+require('dotenv').config()
+
 const express = require('express')
 const app = express()
 const port = 3001
+const API_KEY = process.env.RAPID_API_KEY
 var unirest = require("unirest")
 var cors = require('cors')
 
@@ -28,7 +31,7 @@ app.get('/api', (incomingRequest, outgoingResponse) => {
 
 	rapidApiRequest.headers({
 		"x-rapidapi-host": "v1-sneakers.p.rapidapi.com",
-		"x-rapidapi-key": "cc28a70d1fmsh58b52975bb244efp15796bjsnaee22e422c9f",
+		"x-rapidapi-key": API_KEY,
 		"useQueryString": true,
 		// "Access-Control-Allow-Origin": "http://localhost:3000",
 		// "Access-Control-Allow-Credentials": true
