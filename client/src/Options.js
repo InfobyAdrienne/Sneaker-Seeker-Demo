@@ -7,8 +7,8 @@ function Options() {
   return (
     <div>
         <h1>Find your perfect Sneaker</h1>
-<h3> Use the search engine to generate matches</h3>
-      <div className="container p-5">
+          <h3> Use the search engine to generate matches</h3>
+        <div className="container p-5">
           <select className="custom-select" defaultValue="">
           <option hidden value="">Brand</option>
             <option value="Nike">Nike</option>
