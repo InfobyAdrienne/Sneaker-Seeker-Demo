@@ -2,6 +2,18 @@ const express = require('express')
 const app = express()
 const port = 3001
 var unirest = require("unirest")
+var cors = require('cors')
+
+app.use(cors())
+ 
+app.get('/products/:id', function (req, res, next) {
+  res.json({msg: 'This is CORS-enabled for all origins!'})
+})
+ 
+app.listen(80, function () {
+  console.log('CORS-enabled web server listening on port 80')
+})
+
 
 app.get('/api', (incomingRequest, outgoingResponse) => {
 
@@ -17,7 +29,9 @@ app.get('/api', (incomingRequest, outgoingResponse) => {
 	rapidApiRequest.headers({
 		"x-rapidapi-host": "v1-sneakers.p.rapidapi.com",
 		"x-rapidapi-key": "cc28a70d1fmsh58b52975bb244efp15796bjsnaee22e422c9f",
-		"useQueryString": true
+		"useQueryString": true,
+		// "Access-Control-Allow-Origin": "http://localhost:3000",
+		// "Access-Control-Allow-Credentials": true
 	});
 
 	rapidApiRequest.end(function (rapidApiResponse) {
