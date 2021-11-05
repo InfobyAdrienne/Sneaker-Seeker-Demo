@@ -1,28 +1,38 @@
 import './App.css';
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import Options from './Options'
 
 function App() {
-    const[state, setState] = useState("")
+  let [data, setData] = useState( [] );
   
+  useEffect(() => {
+    fetch('/api')
+      .then((res) => res.json())
+      .then((data) => setData(data.message));
+  }, []);
+  // At the moment the useEffect doesn't pull the data 
   
+    // useEffect(() => {
+    //   fetch("/api")
+    //   .then(response => response.json())
+    //       // 4. Setting *dogImage* to the image url that we received from the response above
+    //   .then(data => setBrand(data))
+    // },[])
   
   return (
-    <div className="container p-5">
-        <select className="custom-select">
-                <option value="Nike">Nike</option>
-        <option value="Jordan">Jordan</option>
-        <option value="Converse">Converse</option>
-        <option value="Adidas">Adidas</option>
-        <option value="Vans">Vans</option>
-        <option value="Puma">Puma</option>
-        <option value="Reebok">Reebok</option>
-        <option value="NewBalance">New Balance</option>
-        <option value="Saucony">Saucony</option>
-        <option value="Asics">Asics</option>
-        <option value="Under Armour">Under Armour</option>
-        </select>
+      
+    <div className="App">
+
+      <header className="App-header">
+        <p>{!data ? "Loading..." : data}</p>
+      </header>
+
+      <div className= 'App'>
+          <Options/>
+      </div>
     </div>
-  )
+  ) 
+
 }
 
 export default App;
