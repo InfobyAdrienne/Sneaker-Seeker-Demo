@@ -31,14 +31,13 @@ function Options() {
       <div className="container p-5">
         <Form.Select className="custom-select" defaultValue="">
         <option hidden value="">Gender</option>
-          <option value="Men">Man</option>
-          <option value="Women">Women</option>
-          <option value="Child">Child</option>
-          <option value="Infant">Infant</option>
-          <option value="Preschool">Preschool</option>
-          <option value="Toddler">Toddler</option>
-          <option value="Unisex">Unisex</option>
-          <option value="Youth">Youth</option>
+          <option value="MEN">Man</option>
+          <option value="WOMEN">Women</option>
+          <option value="CHILD">Child</option>
+          <option value="INFANT">Infant</option>
+          <option value="PRESCHOOL">Preschool</option>
+          <option value="TODDLER">Toddler</option>
+          <option value="UNISEX">Unisex</option>
         </Form.Select>
       </div>
       <div className="container p-5">
