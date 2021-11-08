@@ -1,6 +1,6 @@
 import './App.css';
-import Options from './Options'
-import DataFetching from './components/DataFetching'
+import Options from './components/Options';
+import DataFetching from './components/DataFetching';
 
 function App() {
   return (
