@@ -2,26 +2,39 @@ import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form'
 import Button  from 'react-bootstrap/Button'
  
-function Options() {
-      
+const Options = (props) => {
       const [currentBrand, setCurrentBrand] = useState('')
       
-      const changeBrand = (newBrand) => {
-        setCurrentBrand(newBrand)
-      }
+      const handleChange = (event) => {
+        event.preventDefault();
+        setCurrentBrand(event.target.value);
+      };
   
-      console.log(currentBrand)
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    props.onSubmit(currentBrand);
+    // let path = `/api?brand=${currentBrand}`;
+    //       if (props.redirect) {
+    //     history.push('/tracks/' + songname);
+    //     }
+      };
+  //     const changeBrand = (newBrand) => {
+  //       setCurrentBrand(newBrand)
+  //     }
+  
+  console.log(currentBrand)
+  // console.log(changeBrand)
   
   return (
     <div>
     <h1>Find your perfect Sneaker</h1>
           <h3> Use the search engine to generate matches</h3>
-    {/* <Form onSubmit={}> */}
-    <Form>
+      <Form>
         <div className="container p-5">
           <Form.Select className="custom-select"
-            onChange={(event) => changeBrand(event.target.value)}
-            value={currentBrand}
+            onChange={handleChange}
+            // {(event) => changeBrand(event.target.value)}
+            // value={currentBrand}
           >
             <option hidden value="">Brand</option>
             <option value="NIKE">Nike</option>
@@ -65,12 +78,12 @@ function Options() {
           <option value="GREY">Grey</option>
           </Form.Select>
       </div>
-      <Button variant="primary" type="submit">
+      <Button variant="primary" type="submit" value="Submit" onSubmit={handleSubmit} >
           Submit
       </Button>
-        
       </Form>
     </div>
+
     )
 }
 export default Options;
