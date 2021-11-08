@@ -24,6 +24,16 @@
   color: white;
 } */
 
+nav {
+  height: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  position: sticky;
+  border-bottom: 2px solid;
+}
+
 .App-link {
   color: #61dafb;
 }
