@@ -1,14 +1,16 @@
 import React , { Component, Fragment }  from 'react';
 // import { BrowserRouter as Router, Routes, Link } from "react-router-dom";
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import Search from './components/Search';
+import Results from './components/Results';
+import Home from './components/Home';
+// import DataFetching from './components/DataFetching';
 
 import './App.css';
 
-
-
 export default function App() {
   return (
-  
+ 
   <BrowserRouter>
 
   <body>
@@ -23,12 +25,19 @@ export default function App() {
           </ul>
         </div>
       </div>
+
     </nav>
   </div> 
-    <Routes>
+    {/* <Routes>
     <Route path="/" exact component={Home} />
     <Route path="/search"  component={Search} />
     <Route path="/quiz"  component={Quiz} />
+    </Routes> */}
+
+    <Routes>
+        <Route path='/' exact element={<Home />}></Route>
+        <Route path='/search' element={<Search />}></Route>
+        <Route path='/results' element={<Results />}></Route>
     </Routes>
 
     <div class="page-container">
@@ -45,30 +54,27 @@ export default function App() {
   </BrowserRouter>
 
   );
+  // const Home = () => (
+  //   <Fragment>
+  //     <h1>Home</h1>
+  //   </Fragment>
+  //   );
+  
+  // const Search = () => (
+  //   <Fragment>
+  //     <h1>Search</h1>
+  //   </Fragment>
+  //   );
+  
+  // const Quiz = () => (
+  //   <Fragment>
+  //     <h1>Quiz</h1>
+      
+  //   </Fragment>
+  //   ); 
+
 }
-
-
-
-const Home = () => (
-  <Fragment>
-    <h1>Home</h1>
-  </Fragment>
-  );
-
-const Search = () => (
-  <Fragment>
-    <h1>Search</h1>
-  </Fragment>
-  );
-
-const Quiz = () => (
-  <Fragment>
-    <h1>Quiz</h1>
-    
-  </Fragment>
-  );
-
-{/* </Routes> import React , {Component}  from 'react';
+/* </Routes> import React , {Component}  from 'react';
  import './App.css';
  import Options from './components/Options';
  import DataFetching from './components/DataFetching';
@@ -95,4 +101,5 @@ const Quiz = () => (
 
  }
 
-export default App; */}
+export default App; */
+
