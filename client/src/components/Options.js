@@ -1,10 +1,16 @@
-
 import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form'
 import Button  from 'react-bootstrap/Button'
-
+ 
 function Options() {
-    const[options, setOptions] = useState("")
+      
+      const [currentBrand, setCurrentBrand] = useState('')
+      
+      const changeBrand = (newBrand) => {
+        setCurrentBrand(newBrand)
+      }
+  
+      console.log(currentBrand)
   
   return (
     <div>
@@ -13,11 +19,14 @@ function Options() {
     {/* <Form onSubmit={}> */}
     <Form>
         <div className="container p-5">
-          <Form.Select className="custom-select" defaultValue="">
-          <option hidden value="">Brand</option>
+          <Form.Select className="custom-select"
+            onChange={(event) => changeBrand(event.target.value)}
+            value={currentBrand}
+          >
+            <option hidden value="">Brand</option>
             <option value="NIKE">Nike</option>
             <option value="JORDAN">Jordan</option>
-            <option value="COONVERSE">Converse</option>
+            <option value="CONVERSE">Converse</option>
             <option value="ADIDAS">Adidas</option>
             <option value="VANS">Vans</option>
             <option value="PUMA">Puma</option>
