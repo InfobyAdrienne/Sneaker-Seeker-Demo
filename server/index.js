@@ -32,6 +32,9 @@ app.get('/api', (incomingRequest, outgoingResponse) => {
 	if (incomingRequest.query.limit !== undefined) {
 		filters.limit = incomingRequest.query.limit;
 	   }
+	if (incomingRequest.query.gender !== undefined) {
+	filters.gender = incomingRequest.query.gender;
+	   }
 		rapidApiRequest.query(filters);
 
 	rapidApiRequest.headers({
