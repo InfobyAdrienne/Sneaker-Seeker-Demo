@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import { Container, Col, Form, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Popup from "./Popup";
 
 function Search() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const togglePopup = (id) => {
+    setIsOpen(!isOpen);
+  };
+
   const [sneakers, setSneakers] = useState([]);
   const [data, setData] = useState({
     brand: "",
@@ -80,7 +87,7 @@ function Search() {
                     <option hidden value="">
                       Gender
                     </option>
-                    <option value="MEN">Man</option>
+                    <option value="MEN">Men</option>
                     <option value="WOMEN">Women</option>
                     <option value="CHILD">Child</option>
                     <option value="INFANT">Infant</option>
@@ -114,7 +121,12 @@ function Search() {
                   </Form.Select>
                 </div>
 
-                <Button variant="primary" type="Submit" value="Submit" onClick={(e) => fetchData(e)}>
+                <Button
+                  variant="primary"
+                  type="Submit"
+                  value="Submit"
+                  onClick={(e) => fetchData(e)}
+                >
                   Submit
                 </Button>
               </form>
@@ -123,17 +135,36 @@ function Search() {
         </Container>
       </div>
 
-      <div>
-        <ul>
-          {sneakers.map((sneaker) => (
-            <li key={sneaker.id}>
-              <li>{sneaker.shoe}</li>
-              <li> Retail price: £{sneaker.retailPrice}</li>
-              <img src={sneaker.media.smallImageUrl} alt="sneaker" />
-            </li>
-          ))}
-        </ul>
-      </div>
+      <button onClick={togglePopup}>
+        <div>
+          <ul>
+            {sneakers.map((sneaker) => (
+              <li key={sneaker.id}>
+                <li>{sneaker.shoe} </li>
+                <li> Retail price: £{sneaker.retailPrice}</li>
+                <img src={sneaker.media.thumbUrl} alt="sneaker"/>
+
+                {/* <input type="button" value="Info" onClick={togglePopup} /> */}
+                {isOpen && (
+                  <Popup
+                    content={
+                      <>
+                        <p><b>Information</b></p>
+                        <p>Sneaker: {sneaker.shoe}</p>
+                        <p>Brand: {sneaker.brand}</p>
+                        <p>Colourway: {sneaker.colorway}</p>
+                        <p>Release Date: {sneaker.releaseDate}</p>
+                        <img src={sneaker.media.thumbUrl} alt="sneaker"/>
+                      </>
+                    }
+                    handleClose={togglePopup}
+                  />
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </button>
     </div>
   );
 }
