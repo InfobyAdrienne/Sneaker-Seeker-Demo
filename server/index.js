@@ -41,8 +41,8 @@ app.get('/api', (incomingRequest, outgoingResponse) => {
 		"x-rapidapi-host": "v1-sneakers.p.rapidapi.com",
 		"x-rapidapi-key": process.env.RAPID_API_KEY,
 		"useQueryString": true,
-		// "Access-Control-Allow-Origin": "http://localhost:3000",
-		// "Access-Control-Allow-Credentials": true
+		"Access-Control-Allow-Origin": "http://localhost:3000/",
+		"Access-Control-Allow-Credentials": true
 	});
 
 	rapidApiRequest.end(function (rapidApiResponse) {
@@ -61,8 +61,8 @@ app.get("/api/:id", (incomingRequest, outgoingResponse) => {
 		"x-rapidapi-host": "v1-sneakers.p.rapidapi.com",
 		"x-rapidapi-key": process.env.RAPID_API_KEY,
 		"useQueryString": true,
-		// "Access-Control-Allow-Origin": "http://localhost:3000",
-		// "Access-Control-Allow-Credentials": true
+		"Access-Control-Allow-Origin": "http://localhost:3000/",
+		"Access-Control-Allow-Credentials": true
 	});
 
 	rapidApiRequest.end(function (rapidApiResponse) {
@@ -78,6 +78,8 @@ app.get("/api/:id", (incomingRequest, outgoingResponse) => {
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
+
+
 
 
 
