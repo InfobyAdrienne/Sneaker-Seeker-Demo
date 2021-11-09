@@ -7,4 +7,3 @@ const Results = (props) => {
   )
 }
 export default Results;
-
