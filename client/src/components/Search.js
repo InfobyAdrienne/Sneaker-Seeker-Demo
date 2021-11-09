@@ -31,6 +31,12 @@ function Search() {
     console.log(newdata);
   }
 
+  // function onClick(e) {
+  //   e.fetchData();
+  //   this.props.history.push('/results');
+  // }
+
+
   return (
     <div>
       <div style={{ margin: "50px" }}>
@@ -114,8 +120,8 @@ function Search() {
                   </Form.Select>
                 </div>
 
-                <Button variant="primary" type="Submit" value="Submit" onClick={(e) => fetchData(e)}>
-                  Submit
+                <Button style={{ float: "right"}}variant="outline-success" type="Submit" value="Submit" onClick={(e) => fetchData(e)}>
+                  Apply
                 </Button>
               </form>
             </Col>

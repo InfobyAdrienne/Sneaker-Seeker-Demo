@@ -1,16 +1,10 @@
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Search from "./components/Search";
 import Results from "./components/Results";
 import DataFetching from "./components/DataFetching";
-import {
-  Button,
-  Navbar,
-  Nav,
-  Container,
-  Row,
-  Col,
-  Stack,
-} from "react-bootstrap";
+import { Button, Navbar, Nav, Container } from "react-bootstrap";
+import { Row, Col, Stack } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.css";
