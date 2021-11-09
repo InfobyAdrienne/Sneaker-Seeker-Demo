@@ -39,16 +39,25 @@ function Search() {
         <h6> Search to generate matches</h6>
       </div> */}
         <div>
-          <Container style={{ marginTop: "20px" }}>
+          <Container style={{ marginTop: "50px" }}>
             <Form>
-              <Col style={{ width: "50%", float: "right" }}>
+              <Col style={{ width: "50%", height: "100%", float: "right" }}>
                 <img src="trainers.jpg" alt="Trainers" />
               </Col>
 
-              <Col style={{ width: "50%", float: "left" }}>
+              <Col
+                style={{
+                  width: "50%",
+                  borderRadius: "10px",
+                  border: "2px solid green",
+                  boxShadow: "20px 20px 20px rgba(236,236,243,255)",
+                  float: "left",
+                }}
+              >
                 <form>
                   <div className="container p-5">
                     <Form.Select
+                      style={{ height: "50px" }}
                       className="custom-select"
                       onChange={(e) => handle(e)}
                       id="brand"
@@ -113,7 +122,11 @@ function Search() {
                   </div>
 
                   <Button
-                    style={{ float: "right", marginRight: "50px" }}
+                    style={{
+                      float: "right",
+                      marginRight: "50px",
+                      marginBottom: "50px",
+                    }}
                     variant="outline-success"
                     type="Submit"
                     value="Submit"
@@ -128,14 +141,14 @@ function Search() {
         </div>
 
         <div>
-          <Container>
+          <Container style={{ marginTop: "50px" }}>
             <Row>
               <Col md="4">
                 <Card style={{ width: "20rem", height: "20rem" }}>
                   <ul style={{ listStyleType: "none" }}>
                     {sneakers.map((sneaker) => (
                       <li key={sneaker.id}>
-                      <img
+                        <img
                           style={{
                             width: "100%",
                             height: "15vw",
@@ -144,10 +157,9 @@ function Search() {
                           src={sneaker.media.smallImageUrl}
                           alt="sneaker"
                         />
-                        
+
                         <li>{sneaker.shoe}</li>
                         <li> Retail price: £{sneaker.retailPrice}</li>
-                        
                       </li>
                     ))}
                   </ul>
