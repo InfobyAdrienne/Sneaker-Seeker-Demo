@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 // import { useNavigate } from 'react-router-dom'
@@ -17,14 +17,15 @@ function Search() {
 
   const url = `http://localhost:3001/api?brand=${data.brand}&gender=${data.gender}&colorway=${data.colorway}`
   
-  const fetchData = async () => {
+  const fetchData = async (e) => {
+    e.preventDefault();
     try {
       const response = await fetch(url);
       const json = await response.json();
       console.log(json.results);
       setSneakers(json.results);
     } catch (error) {
-      console.log('error', error);
+      console.log(error);
     }
   };
 
