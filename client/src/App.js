@@ -4,7 +4,7 @@ import Search from "./components/Search";
 import Results from "./components/Results";
 import DataFetching from "./components/DataFetching";
 import { Button, Navbar, Nav, Container } from "react-bootstrap";
-import { Row, Col, Stack } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.css";
@@ -23,34 +23,30 @@ export default function App() {
               style={{ maxHeight: "100px" }}
               navbarScroll
             ></Nav>
-            <Button variant="outline-success">SEARCH</Button>
+            <Button href="/search" variant="outline-success">
+              SEARCH
+            </Button>
           </Navbar.Collapse>
         </Container>
       </Navbar>
 
       <Container>
-        <Row className="justify-content-md-center">
-          <Col sm="3"></Col>
-          <Col sm="6">
-            <div class="title">
-              <h1>FIND YOUR PERFECT SNEAKERS</h1>
-            </div>
+        <div class="title">
+          <h1 style={{ textAlign: "center" }}>FIND YOUR PERFECT SNEAKERS</h1>
+        </div>
+        <Row>
+          <Col>
             {/* <Image src="holder.js/171x180" thumbnail /> */}
             {/* <Image src="holder.js/171x180" thumbnail /> */}
-            <Stack
-              gap={2}
-              direction="horizontal"
-              className="col-md-7 mx-auto buttons-class"
-            >
-              <Button href="/search" variant="secondary">
-                I KNOW WHAT I WANT
-              </Button>
-              <Button href="/results" variant="outline-secondary">
-                INSPIRE ME
-              </Button>
-            </Stack>
+            <Button style={{ float: "right" }} href="/search" variant="secondary">
+              I KNOW WHAT I WANT
+            </Button>
           </Col>
-          <Col sm="3"></Col>
+          <Col>
+            <Button href="/results" variant="outline-success">
+              INSPIRE ME
+            </Button>
+          </Col>
         </Row>
       </Container>
 
