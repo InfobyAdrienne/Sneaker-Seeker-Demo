@@ -1,92 +1,25 @@
-/* .App {
-  text-align: center;
-} */
-/* 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
 /* <div style="position: fixed; top: 0; width: 100%; z-index: 100">
     <nav style="box-shadow: 1px 1px 4px rgb(0 0 0 / 10%)"> */
-    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;1,200;1,400&display=swap");
+    /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;1,200;1,400&display=swap"); */
     
-    /* * {
-      margin: 0;
-      padding: 0;
+  /* * {
       font-family: "Montserrat", sans-serif;
-      --green: #04773b;
-      --gray: #808080;
-      margin-bottom: 2em;
-    } */
+    }
+ */
 
+ .title {
+   margin-top: 3em;
+   margin-bottom: 1em;
+ }
 
-/* body {
-  height: 100vh;
-} */
-/* 
-nav {
-  height: 60px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  box-shadow: 1px 1px 4px;
-  background-color: var(--green);
-  color: white;
-} */
-/* 
-ul, li {
-  list-style-type: none;
-  text-decoration: none;
-  margin: 0px;
-  padding: 10;
-  float: right;
-} */
+ .buttons-class {
+  margin-top: 2em;
+  margin-bottom: 1em;
+ }
 
-.page-container {
+/* .page-container {
   margin: 6em;
-  /* max-width: 600px !important; */
-  /* align-items: center;
-  justify-content: center; */
-}
-
-.tag-line, #tag {
-  text-align: center;
-}
-
-.btn {
-  border: display;
-  border-radius: 5px;
-  color: var(--grey);
-}
-/* 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  max-width: 600px !important;
+  align-items: center;
+  justify-content: center;
 } */
