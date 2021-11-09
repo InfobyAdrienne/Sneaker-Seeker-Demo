@@ -1,63 +1,47 @@
 import React, { useState, useEffect } from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-import { useNavigate } from 'react-router-dom'
-import Unirest from 'unirest'
-
- 
-// const Search = ({ brand }) => {
-//   const [currentBrand, setCurrentBrand] = useState('')
-//   const navigate = useNavigate();
-  
-//     const handleChange = (event) => {
-//       event.preventDefault();
-//       setCurrentBrand(event.target.value);
-//     };
-  
-//     const handleSubmit = (e) => {
-//       e.preventDefault();
-//       console.log("submitted");
-//       brand.submit(currentBrand);
-//         if (brand.redirect) {
-//           navigate.push('/results/');
-//         }
-//     };
-  
-  
-  // console.log(currentBrand)
+// import { useNavigate } from 'react-router-dom'
+// import Unirest from 'unirest'
   
 function Search() {
-  const url = 'http://localhost:3001/api/'
-
+  
+  // const [query, setQuery] = useState('');
+  
+  const [sneakers, setSneakers] = useState([]);
   const [data, setData] = useState({
     brand: '',
     gender: '',
     colorway: ''
   })
 
-  function submit(e) {
-    e.preventDefault();
-    Unirest
-      .post(url)
-      .headers({ Accept: 'application/json', 'Content-Type': 'application/json' })
-      .send({
-        brand: data.brand,
-        gender: data.gender,
-        colorway: data.colorway
-      })
-      .then((res) => {
-          console.log(res.data);
-    });
-      
-    //   .post(url, {
-    //   brand: data.brand,
-    //   gender: data.gender,
-    //   colorway: data.colorway
-    // })
-    //   .then(res => {
-    //     console.log(res.data)
-    // })
-  }
+  const url = `http://localhost:3001/api?brand=${data.brand}&gender=${data.gender}&colorway=${data.colorway}`
+  
+  const fetchData = async () => {
+    try {
+      const response = await fetch(url);
+      const json = await response.json();
+      console.log(json.results);
+      setSneakers(json.results);
+    } catch (error) {
+      console.log('error', error);
+    }
+  };
+
+  // function fetchData(e) {
+    // e.preventDefault();
+    // Unirest
+    //   .post(`http://localhost:3001/api?brand=${data.brand}&gender=${data.gender}&colorway=${data.colorway}`)
+    //   .headers({ Accept: 'application/json', 'Content-Type': 'application/json' })
+    //   .send({
+    //     brand: data.brand,
+    //     gender: data.gender,
+    //     colorway: data.colorway
+    //   })
+    //   .then((res) => {
+    //       console.log(res.data);
+    // });
+  // }
 
   function handle(e) {
     const newdata = { ...data }
@@ -71,7 +55,7 @@ function Search() {
     <h1>Find your perfect Sneaker</h1>
       <h3> Use the search engine to generate matches</h3>
       
-      <form onSubmit={(e) => submit(e)}>
+      <form onSubmit={(e) => fetchData(e)}>
 
       <div className="container p-5">  
         <Form.Select className="custom-select"

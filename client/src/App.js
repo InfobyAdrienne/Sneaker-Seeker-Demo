@@ -2,7 +2,7 @@ import './App.css';
 import Search from './components/Search';
 import Results from './components/Results'
 import Home from './components/Home'
-// import DataFetching from './components/DataFetching';
+import DataFetching from './components/DataFetching';
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
 function App() {
@@ -25,10 +25,14 @@ function App() {
       </div> */}
 
       </div>
+
     <Routes>
+        
+
         <Route path='/' exact element={<Home />}></Route>
         <Route path='/search' element={<Search />}></Route>
         <Route path='/results' element={<Results />}></Route>
+        <Route path='/datafetching' element={<DataFetching />}></Route>
     </Routes>
       
     </Router>
