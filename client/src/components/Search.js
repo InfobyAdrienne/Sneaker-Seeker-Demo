@@ -29,21 +29,6 @@ function Search() {
     }
   };
 
-  // function fetchData(e) {
-    // e.preventDefault();
-    // Unirest
-    //   .post(`http://localhost:3001/api?brand=${data.brand}&gender=${data.gender}&colorway=${data.colorway}`)
-    //   .headers({ Accept: 'application/json', 'Content-Type': 'application/json' })
-    //   .send({
-    //     brand: data.brand,
-    //     gender: data.gender,
-    //     colorway: data.colorway
-    //   })
-    //   .then((res) => {
-    //       console.log(res.data);
-    // });
-  // }
-
   function handle(e) {
     const newdata = { ...data }
     newdata[e.target.id] = e.target.value
@@ -117,7 +102,18 @@ function Search() {
             <Button variant="primary" type="Submit" value="Submit">
           Submit
       </Button>
-    </form>
+      </form>
+    <div>
+      <ul>
+        {sneakers.map(sneaker => (
+          <li key={sneaker.id}>
+            <li>{sneaker.shoe}</li>
+            <li> Retail price: £{sneaker.retailPrice}</li>
+            <img src={sneaker.media.smallImageUrl} alt="sneaker" />
+          </li>
+          ))}
+      </ul>
+    </div>
       </div>
     )
 }
