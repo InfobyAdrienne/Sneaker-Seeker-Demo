@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import Search from './components/Search';
 import Results from './components/Results';
 import Home from './components/Home';
+import { Form , Button , Navbar , Nav , Container } from 'react-bootstrap';
 // import DataFetching from './components/DataFetching';
 
 import './App.css';
@@ -15,7 +16,26 @@ export default function App() {
 
   <body>
     <div>
-    <nav>
+    <Navbar fixed="top" />
+    <Navbar bg="light" expand="lg">
+  <Container fluid>
+    <Navbar.Brand href="#">SNEAKER SEEKER</Navbar.Brand>
+    <Navbar.Toggle aria-controls="navbarScroll" />
+    <Navbar.Collapse id="navbarScroll">
+      <Nav
+        className="me-auto my-2 my-lg-0"
+        style={{ maxHeight: '100px' }}
+        navbarScroll
+      >
+        <Nav.Link href="/search">SEARCH</Nav.Link>
+        <Nav.Link href="/quiz">QUIZ</Nav.Link>
+      </Nav>
+        <Button variant="outline-success">Search</Button>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
+
+    {/* <nav>
       <div class="container-fluid">
         <a class="navbar-brand">Sneaker Seeker</a>
         <div>
@@ -26,7 +46,7 @@ export default function App() {
         </div>
       </div>
 
-    </nav>
+    </nav> */}
   </div> 
     {/* <Routes>
     <Route path="/" exact component={Home} />
