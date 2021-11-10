@@ -1,9 +1,9 @@
-<h1 align="center">Sneaker Seeker<br><br>
-👟👁👁👟</h1>
+<h1 align="center">Sneaker Seeker<br>
+  <img width="494" alt="sneakerseekerlogo" src="https://user-images.githubusercontent.com/61777002/141202460-10c6cb3b-edd4-4860-bdc9-77658537a884.png">
+<br></h1>
 <h4 align="center", font="italics" ><em>A full-stack web app that searches the latest footwear trends, so you don't have to.</em></h4>
 
-[Screenshot 2021-11-10 at 21 56 19](https://user-images.githubusercontent.com/61777002/141199939-98f698bb-6059-4085-923f-9c1ced96e165.png)
-
+![Screenshot 2021-11-10 at 22 11 38](https://user-images.githubusercontent.com/61777002/141202165-1a954eb0-f325-4421-a243-ad9dbcac020d.png)
 
 <h2>Contributors</h2>
 
@@ -84,7 +84,7 @@ So that I can go through the results
 ```
 
 <h2>Domain Models & Wireframes</h2>
-
+![Screenshot 2021-11-10 at 21 56 19](https://user-images.githubusercontent.com/61777002/141202350-5d4bfa2a-b8ae-45cd-bc8c-dd20076dc0db.png)
 <h2>Process of development</h2>
 
 <h2>What we would do next</h2>
