@@ -3,6 +3,10 @@
   float: left; 
 }
 
+.logo {
+  max-width: 20%;
+}
+
 h1 {
   text-align: center;
   padding-top: 150px;
@@ -14,7 +18,8 @@ h1 {
 
 /* SEARCH */
 .container {
-  margin-top: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .right-col {
   width: 50%;

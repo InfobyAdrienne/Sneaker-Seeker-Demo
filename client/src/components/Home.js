@@ -1,6 +1,8 @@
 import React from "react";
 import { Button, Container, Row, Col, Stack } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import BootstrapCarouselComponent from "./BootstrapCarouselComponent";
+
 
 const Home = (props) => {
   var array = [
@@ -17,6 +19,8 @@ const Home = (props) => {
   console.log(randomItem)
    
   return (
+
+ <div className="mx-auto">
     <Container style={{ backgroundImage: "url(/trainers.jpg)" }}>
       <Row className="justify-content-md-center">
         <Col sm="3"></Col>
@@ -43,6 +47,11 @@ const Home = (props) => {
         <Col sm="3"></Col>
       </Row>
     </Container>
+</div>
+<div className="pt-5">
+        <BootstrapCarouselComponent></BootstrapCarouselComponent>
+      </div>
+
   );
 };
 export default Home;

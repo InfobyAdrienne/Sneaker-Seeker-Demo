@@ -7,15 +7,14 @@ import { Button, Navbar, Nav, Container } from "react-bootstrap";
 // import { Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import logo from './ss-logo-bar.png'
 
 export default function App() {
- 
   return (
-
     <BrowserRouter>
       <Navbar fixed="top" bg="light" expand="lg">
         <Container fluid>
-          <Navbar.Brand href="/">SNEAKER SEEKER</Navbar.Brand>
+          <Navbar.Brand href="/">< img src={logo} class="logo img-fluid" alt="My logo" /> </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -29,6 +28,9 @@ export default function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      {/* <div className="Carousel">
+        <BootstrapCarouselComponent></BootstrapCarouselComponent>
+      </div> */}
 
       {/* <Container>
         <div class="title">
@@ -53,7 +55,7 @@ export default function App() {
         <Route path="/datafetching" element={<DataFetching />}></Route>
         <Route path="/" element={<Home />}></Route>
       </Routes>
-      </BrowserRouter>
-      // </div>
+    </BrowserRouter>
+    // </div>
   );
 }
