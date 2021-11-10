@@ -1,22 +1,16 @@
 import React from 'react';
-import {
-  Button,
-  Container,
-  Row,
-  Col,
-  Stack,
-} from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
+import { Row, Col, Stack } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-
+import "../App.css";
 
 const Home = (props) => {
   return (
-    <Container style={{ backgroundImage: "url(/trainers.jpg)" }}>
+    <Container>
     <Row className="justify-content-md-center">
       <Col sm="3"></Col>
       <Col sm="6">
-        <div class="title">
+        <div className="title">
           <h1>FIND YOUR PERFECT SNEAKERS</h1>
         </div>
         <Stack
@@ -24,10 +18,10 @@ const Home = (props) => {
           direction="horizontal"
           className="col-md-7 mx-auto buttons-class"
         >
-          <Button href="/search" variant="secondary">
+          <Button href="/search" variant="outline-success">
             I KNOW WHAT I WANT
           </Button>
-          <Button href="/inspire" variant="outline-secondary">
+          <Button href="/inspire" variant="outline-success">
             INSPIRE ME
           </Button>
         </Stack>

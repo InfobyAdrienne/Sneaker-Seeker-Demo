@@ -46,14 +46,10 @@ function Search() {
     <body>
       <div>
         <div>
-          <Container class="Container">
+          <Container className="Container">
             <Row>
               <Form>
-                <Col class="right-col">
-                  {/* <img src="" alt="Trainers" /> */}
-                </Col>
-
-                <Col class="left-col">
+              <Col className="column">
                   <form>
                     <div className="container p-5">
                       <Form.Select
@@ -121,7 +117,7 @@ function Search() {
                     </div>
 
                     <Button
-                      class="form-btn"
+                      className="form-btn"
                       variant="outline-success"
                       type="Submit"
                       value="Submit"
@@ -158,7 +154,7 @@ function Search() {
                       </p>
                       <p>Sneaker: {sneaker.shoe}</p>
                       <p>Brand: {sneaker.brand}</p>
-                      <p>Colourway: {sneaker.colorway}</p>
+                      <p>Colour: {sneaker.colorway}</p>
                       <p>Release Date: {sneaker.releaseDate}</p>
                       <img src={sneaker.media.thumbUrl} alt="sneaker" />
                     </>
