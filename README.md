@@ -1,12 +1,54 @@
-# Sneaker Seeker
+<h1 align="center">Sneaker Seeker<br><br>
+👟👁👁👟</h1>
+<h4 align="center", font="italics" ><em>A full-stack web app that searches the latest footwear trends, so you don't have to.</em></h4>
 
-## Our Team
+<h2>Contributors</h2>
 
-[![Laura](https://img.icons8.com/nolan/25/github.png)](https://github.com/LauraMaddaluno) Laura [![Adrienne](https://img.icons8.com/nolan/25/github.png)](https://github.com/InfobyAdrienne) Adrienne [![Ifrah](https://img.icons8.com/nolan/25/github.png)](https://github.com/Ifrahhssn) Ifrah [![Tomisin](https://img.icons8.com/nolan/25/github.png)](https://github.com/TomisinJ) Tomisin [![Luke](https://img.icons8.com/nolan/25/github.png)](https://github.com/99ltaylor) Luke [![Leah](https://img.icons8.com/nolan/25/github.png)](https://github.com/leahcolleen) Leah
+[![Adrienne](https://img.icons8.com/nolan/25/github.png)](https://github.com/InfobyAdrienne) Adrienne [![Ifrah](https://img.icons8.com/nolan/25/github.png)](https://github.com/Ifrahhssn) Ifrah [![Laura](https://img.icons8.com/nolan/25/github.png)](https://github.com/LauraMaddaluno) Laura [![Leah](https://img.icons8.com/nolan/25/github.png)](https://github.com/leahcolleen) Leah [![Luke](https://img.icons8.com/nolan/25/github.png)](https://github.com/99ltaylor) Luke [![Tomisin](https://img.icons8.com/nolan/25/github.png)](https://github.com/TomisinJ) Tomisin 
 
-## User Stories
+<h2>Technologies</h2>
+<br>
+<p>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a>
+<a href="https://nodejs.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> 
+<a href="https://heroku.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> </a> 
+<a href="https://jasmine.github.io/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/jasmine/jasmine-icon.svg" alt="jasmine" width="40" height="40"/> </a> 
+</p>
 
-MVP Stories
+<h2>How to use</h2>
+This app is fully deployed on Heroku at https://sneaker-seaker-frontend.herokuapp.com/<br>
+OR install the code and run locally:
+<br>
+<br>
+1. Clone the directory
+
+```
+$ git clone https://github.com/InfobyAdrienne/Test-React-Express.git
+$ cd Test-React-Express
+```
+2. Start the back end server 
+```
+$ cd server
+$ npm install #(requires node to be installed)
+$ npm start #(web app will open in the browser at localhost:3000)
+```
+3. Start the front end server 
+```
+In a new terminal window: 
+$ cd ..
+$ cd client
+$ npm install
+$ npm start #(web app will open in the browser at localhost:3001)
+``` 
+
+<h2>Our objectives as a team</h2>
+1. Create a safe and supportive learning environment<br>
+2. Build our confidence with JavaScript and become familiar with React<br>
+3. Be led by Test Driven Development<br>
+4. Learn how to select, implement and use an API<br>
+5. Create an sleek user interface<br>
+
+<h2>MVP user stories</h2>
 
 ```
 As a user
@@ -38,10 +80,9 @@ I want to be able to see results on one page
 So that I can go through the results
 ```
 
-## Domain Models & Wireframes
+<h2>Domain Models & Wireframes</h2>
 
-## Tech Stack
+<h2>Process of development</h2>
 
-Express
-React
-Node
+<h2>What we would do next</h2>
+
