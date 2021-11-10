@@ -8,6 +8,7 @@ import { Button, Navbar, Nav, Container } from "react-bootstrap";
 // import { Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import BootstrapCarouselComponent from './components/BootstrapCarouselComponent';
 
 export default function App() {
  
@@ -29,6 +30,11 @@ export default function App() {
             </Button>
           </Navbar.Collapse>
         </Container>
+        <div className="Carousel">
+          <BootstrapCarouselComponent>
+
+          </BootstrapCarouselComponent>
+        </div>
       </Navbar>
 
       {/* <Container>

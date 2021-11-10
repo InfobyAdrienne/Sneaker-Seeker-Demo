@@ -5,14 +5,14 @@ import {
   Row,
   Col,
   Stack,
+  Carousel,
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
-
 const Home = (props) => {
   return (
-    <Container style={{ backgroundImage: "url(/trainers.jpg)" }}>
+    <Container style={{ Image: "url(/trainers.jpg)" }}>
+
     <Row className="justify-content-md-center">
       <Col sm="3"></Col>
       <Col sm="6">
@@ -34,6 +34,10 @@ const Home = (props) => {
       </Col>
       <Col sm="3"></Col>
     </Row>
+    <Carousel>
+      <Carousel.Item>
+      </Carousel.Item>
+    </Carousel>
   </Container>
   )
 }
