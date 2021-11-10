@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../App.css";
 
 function Search() {
   const [sneakers, setSneakers] = useState([]);
@@ -34,30 +35,18 @@ function Search() {
   return (
     <body>
       <div>
-        {/* <div>
-        <h1>Find your perfect Sneaker</h1>
-        <h6> Search to generate matches</h6>
-      </div> */}
         <div>
-          <Container style={{ marginTop: "50px" }}>
+          <Container class="Container">
+          <Row>
             <Form>
-              <Col style={{ width: "50%", height: "100%", float: "right" }}>
-                <img src="trainers.jpg" alt="Trainers" />
+              <Col class="right-col">
+                {/* <img src="" alt="Trainers" /> */}
               </Col>
 
-              <Col
-                style={{
-                  width: "50%",
-                  borderRadius: "10px",
-                  border: "2px solid green",
-                  boxShadow: "20px 20px 20px rgba(236,236,243,255)",
-                  float: "left",
-                }}
-              >
+              <Col class="left-col">
                 <form>
                   <div className="container p-5">
                     <Form.Select
-                      style={{ height: "50px" }}
                       className="custom-select"
                       onChange={(e) => handle(e)}
                       id="brand"
@@ -122,11 +111,7 @@ function Search() {
                   </div>
 
                   <Button
-                    style={{
-                      float: "right",
-                      marginRight: "50px",
-                      marginBottom: "50px",
-                    }}
+                    class="form-btn"
                     variant="outline-success"
                     type="Submit"
                     value="Submit"
@@ -137,23 +122,20 @@ function Search() {
                 </form>
               </Col>
             </Form>
+            </Row>
           </Container>
         </div>
 
         <div>
-          <Container style={{ marginTop: "50px" }}>
+          <Container class="card-container">
             <Row>
               <Col md="4">
-                <Card style={{ width: "20rem", height: "20rem" }}>
-                  <ul style={{ listStyleType: "none" }}>
+                <Card class="results-card">
+                  <ul>
                     {sneakers.map((sneaker) => (
                       <li key={sneaker.id}>
                         <img
-                          style={{
-                            width: "100%",
-                            height: "15vw",
-                            objectFit: "cover",
-                          }}
+                          class="card-img"
                           src={sneaker.media.smallImageUrl}
                           alt="sneaker"
                         />
