@@ -2,6 +2,9 @@
 👟👁👁👟</h1>
 <h4 align="center", font="italics" ><em>A full-stack web app that searches the latest footwear trends, so you don't have to.</em></h4>
 
+[Screenshot 2021-11-10 at 21 56 19](https://user-images.githubusercontent.com/61777002/141199939-98f698bb-6059-4085-923f-9c1ced96e165.png)
+
+
 <h2>Contributors</h2>
 
 [![Adrienne](https://img.icons8.com/nolan/25/github.png)](https://github.com/InfobyAdrienne) Adrienne [![Ifrah](https://img.icons8.com/nolan/25/github.png)](https://github.com/Ifrahhssn) Ifrah [![Laura](https://img.icons8.com/nolan/25/github.png)](https://github.com/LauraMaddaluno) Laura [![Leah](https://img.icons8.com/nolan/25/github.png)](https://github.com/leahcolleen) Leah [![Luke](https://img.icons8.com/nolan/25/github.png)](https://github.com/99ltaylor) Luke [![Tomisin](https://img.icons8.com/nolan/25/github.png)](https://github.com/TomisinJ) Tomisin 
