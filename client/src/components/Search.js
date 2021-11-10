@@ -2,8 +2,18 @@ import React, { useState } from "react";
 import { Container, Row, Col, Form, Button, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
+import Popup from "./Popup";
 
 function Search() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const [openSneaker, setOpenSneaker] = useState(false);
+
+  const togglePopup = (id) => {
+    setOpenSneaker(id)
+    setIsOpen(!isOpen);
+  };
+
   const [sneakers, setSneakers] = useState([]);
   const [data, setData] = useState({
     brand: "",
@@ -126,30 +136,66 @@ function Search() {
           </Container>
         </div>
 
-        <div>
-          <Container class="card-container">
-            <Row>
-              <Col md="4">
-                <Card class="results-card">
-                  <ul>
-                    {sneakers.map((sneaker) => (
-                      <li key={sneaker.id}>
-                        <img
-                          class="card-img"
-                          src={sneaker.media.smallImageUrl}
-                          alt="sneaker"
-                        />
+//         <div>
+//           <Container class="card-container">
+//             <Row>
+//               <Col md="4">
+//                 <Card class="results-card">
+//                   <ul>
+//                     {sneakers.map((sneaker) => (
+//                       <li key={sneaker.id}>
+//                         <img
+//                           class="card-img"
+//                           src={sneaker.media.smallImageUrl}
+//                           alt="sneaker"
+//                         />
 
-                        <li>{sneaker.shoe}</li>
-                        <li> Retail price: £{sneaker.retailPrice}</li>
-                      </li>
-                    ))}
-                  </ul>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-        </div>
+//                         <li>{sneaker.shoe}</li>
+//                         <li> Retail price: £{sneaker.retailPrice}</li>
+//                       </li>
+//                     ))}
+//                   </ul>
+//                 </Card>
+//               </Col>
+//             </Row>
+//           </Container>
+//         </div>
+
+      <div>
+        {/* <button onClick={togglePopup}> */}
+          {sneakers.map((sneaker) => (
+            <p key={sneaker.id} {...sneaker}>
+              <p>{sneaker.shoe} </p>
+              <p> Retail price: £{sneaker.retailPrice}</p>
+              <button onClick={() => {
+                console.log(sneaker.id)
+                togglePopup(sneaker.id)
+              }}
+              >
+                <img src={sneaker.media.thumbUrl} alt="sneaker" />
+              </button>
+              {/* <input type="button" value="Info" onClick={togglePopup} /> */}
+              {isOpen && openSneaker === sneaker.id &&(
+                <Popup
+                  content={
+                    <>
+                      <p>
+                        <b>Information</b>
+                      </p>
+                      <p>Sneaker: {sneaker.shoe}</p>
+                      <p>Brand: {sneaker.brand}</p>
+                      <p>Colourway: {sneaker.colorway}</p>
+                      <p>Release Date: {sneaker.releaseDate}</p>
+                      <img src={sneaker.media.thumbUrl} alt="sneaker" />
+                    </>
+                  }
+                  handleClose={() => togglePopup(sneaker.id)}
+                />
+              )}
+            </p>
+          ))}
+        {/* </button> */}
+
       </div>
     </body>
   );
