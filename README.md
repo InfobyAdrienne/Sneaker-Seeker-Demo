@@ -1,4 +1,4 @@
-<h1 align="center">Sneaker Seeker<br>
+<h1 align="center">
   <img width="494" alt="sneakerseekerlogo" src="https://user-images.githubusercontent.com/61777002/141202460-10c6cb3b-edd4-4860-bdc9-77658537a884.png">
 <br></h1>
 <h4 align="center", font="italics" ><em>A full-stack web app that searches the latest footwear trends, so you don't have to.</em></h4>
@@ -44,7 +44,7 @@ $ npm install
 $ npm start #(web app will open in the browser at localhost:3000)
 ``` 
 
-<h2>Our objectives as a team</h2>
+<h2>Our team objectives</h2>
 1. Create a safe and supportive learning environment<br>
 2. Build our confidence with JavaScript and become familiar with React<br>
 3. Be led by Test Driven Development<br>
@@ -84,7 +84,9 @@ So that I can go through the results
 ```
 
 <h2>Domain Models & Wireframes</h2>
-![Screenshot 2021-11-10 at 21 56 19](https://user-images.githubusercontent.com/61777002/141202350-5d4bfa2a-b8ae-45cd-bc8c-dd20076dc0db.png)
+![Domain Models & Wireframes](https://user-images.githubusercontent.com/61777002/141203173-9bd15141-7366-4d04-9ecf-cbc8517605e7.png)
+
+
 <h2>Process of development</h2>
 
 <h2>What we would do next</h2>
