@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Form, Button, Card } from "react-bootstrap";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 import Popup from "./Popup";
@@ -10,7 +10,7 @@ function Search() {
   const [openSneaker, setOpenSneaker] = useState(false);
 
   const togglePopup = (id) => {
-    setOpenSneaker(id)
+    setOpenSneaker(id);
     setIsOpen(!isOpen);
   };
 
@@ -47,135 +47,109 @@ function Search() {
       <div>
         <div>
           <Container class="Container">
-          <Row>
-            <Form>
-              <Col class="right-col">
-                {/* <img src="" alt="Trainers" /> */}
-              </Col>
+            <Row>
+              <Form>
+                <Col class="right-col">
+                  {/* <img src="" alt="Trainers" /> */}
+                </Col>
 
-              <Col class="left-col">
-                <form>
-                  <div className="container p-5">
-                    <Form.Select
-                      className="custom-select"
-                      onChange={(e) => handle(e)}
-                      id="brand"
-                      value={data.brand}
+                <Col class="left-col">
+                  <form>
+                    <div className="container p-5">
+                      <Form.Select
+                        className="custom-select"
+                        onChange={(e) => handle(e)}
+                        id="brand"
+                        value={data.brand}
+                      >
+                        <option hidden value="">
+                          Brand
+                        </option>
+                        <option value="NIKE">Nike</option>
+                        <option value="JORDAN">Jordan</option>
+                        <option value="CONVERSE">Converse</option>
+                        <option value="ADIDAS">Adidas</option>
+                        <option value="VANS">Vans</option>
+                        <option value="PUMA">Puma</option>
+                        <option value="REEBOK">Reebok</option>
+                        <option value="NEW%20BALANCE">New Balance</option>
+                        <option value="SAUCONY">Saucony</option>
+                        <option value="ASICS">Asics</option>
+                        <option value="AIR%20JORDAN">Under Armour</option>
+                      </Form.Select>
+                    </div>
+
+                    <div className="container p-5">
+                      <Form.Select
+                        className="custom-select"
+                        onChange={(e) => handle(e)}
+                        id="gender"
+                        value={data.gender}
+                      >
+                        <option hidden value="">
+                          Gender
+                        </option>
+                        <option value="MEN">Man</option>
+                        <option value="WOMEN">Woman</option>
+                        <option value="UNISEX">Unisex</option>
+                        <option value="CHILD">Junior</option>
+                      </Form.Select>
+                    </div>
+
+                    <div className="container p-5">
+                      <Form.Select
+                        className="custom-select"
+                        onChange={(e) => handle(e)}
+                        id="colorway"
+                        value={data.colorway}
+                      >
+                        <option hidden value="">
+                          Colour
+                        </option>
+                        <option value="RED">Red</option>
+                        <option value="BLACK">Black</option>
+                        <option value="BLUE">Blue</option>
+                        <option value="PURPLE">Purple</option>
+                        <option value="ORANGE">Orange</option>
+                        <option value="GREEN">Green</option>
+                        <option value="YELLOW">Yellow</option>
+                        <option value="PINK">Pink</option>
+                        <option value="WHITE">White</option>
+                        <option value="BROWN">Brown</option>
+                        <option value="GREY">Grey</option>
+                      </Form.Select>
+                    </div>
+
+                    <Button
+                      class="form-btn"
+                      variant="outline-success"
+                      type="Submit"
+                      value="Submit"
+                      onClick={(e) => fetchData(e)}
                     >
-                      <option hidden value="">
-                        Brand
-                      </option>
-                      <option value="NIKE">Nike</option>
-                      <option value="JORDAN">Jordan</option>
-                      <option value="CONVERSE">Converse</option>
-                      <option value="ADIDAS">Adidas</option>
-                      <option value="VANS">Vans</option>
-                      <option value="PUMA">Puma</option>
-                      <option value="REEBOK">Reebok</option>
-                      <option value="NEW%20BALANCE">New Balance</option>
-                      <option value="SAUCONY">Saucony</option>
-                      <option value="ASICS">Asics</option>
-                      <option value="AIR%20JORDAN">Under Armour</option>
-                    </Form.Select>
-                  </div>
-
-                  <div className="container p-5">
-                    <Form.Select
-                      className="custom-select"
-                      onChange={(e) => handle(e)}
-                      id="gender"
-                      value={data.gender}
-                    >
-                      <option hidden value="">
-                        Gender
-                      </option>
-                      <option value="MEN">Man</option>
-                      <option value="WOMEN">Woman</option>
-                      <option value="UNISEX">Unisex</option>
-                      <option value="CHILD">Junior</option>
-                    </Form.Select>
-                  </div>
-
-                  <div className="container p-5">
-                    <Form.Select
-                      className="custom-select"
-                      onChange={(e) => handle(e)}
-                      id="colorway"
-                      value={data.colorway}
-                    >
-                      <option hidden value="">
-                        Colour
-                      </option>
-                      <option value="RED">Red</option>
-                      <option value="BLACK">Black</option>
-                      <option value="BLUE">Blue</option>
-                      <option value="PURPLE">Purple</option>
-                      <option value="ORANGE">Orange</option>
-                      <option value="GREEN">Green</option>
-                      <option value="YELLOW">Yellow</option>
-                      <option value="PINK">Pink</option>
-                      <option value="WHITE">White</option>
-                      <option value="BROWN">Brown</option>
-                      <option value="GREY">Grey</option>
-                    </Form.Select>
-                  </div>
-
-                  <Button
-                    class="form-btn"
-                    variant="outline-success"
-                    type="Submit"
-                    value="Submit"
-                    onClick={(e) => fetchData(e)}
-                  >
-                    Apply
-                  </Button>
-                </form>
-              </Col>
-            </Form>
+                      Apply
+                    </Button>
+                  </form>
+                </Col>
+              </Form>
             </Row>
           </Container>
         </div>
 
-//         <div>
-//           <Container class="card-container">
-//             <Row>
-//               <Col md="4">
-//                 <Card class="results-card">
-//                   <ul>
-//                     {sneakers.map((sneaker) => (
-//                       <li key={sneaker.id}>
-//                         <img
-//                           class="card-img"
-//                           src={sneaker.media.smallImageUrl}
-//                           alt="sneaker"
-//                         />
-
-//                         <li>{sneaker.shoe}</li>
-//                         <li> Retail price: £{sneaker.retailPrice}</li>
-//                       </li>
-//                     ))}
-//                   </ul>
-//                 </Card>
-//               </Col>
-//             </Row>
-//           </Container>
-//         </div>
-
-      <div>
-        {/* <button onClick={togglePopup}> */}
+        <div>
           {sneakers.map((sneaker) => (
             <p key={sneaker.id} {...sneaker}>
               <p>{sneaker.shoe} </p>
               <p> Retail price: £{sneaker.retailPrice}</p>
-              <button onClick={() => {
-                console.log(sneaker.id)
-                togglePopup(sneaker.id)
-              }}
+              <button
+                onClick={() => {
+                  console.log(sneaker.id);
+                  togglePopup(sneaker.id);
+                }}
               >
                 <img src={sneaker.media.thumbUrl} alt="sneaker" />
               </button>
-              {/* <input type="button" value="Info" onClick={togglePopup} /> */}
-              {isOpen && openSneaker === sneaker.id &&(
+              {isOpen && openSneaker === sneaker.id && (
                 <Popup
                   content={
                     <>
@@ -194,8 +168,7 @@ function Search() {
               )}
             </p>
           ))}
-        {/* </button> */}
-
+        </div>
       </div>
     </body>
   );
