@@ -1,21 +1,19 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Search from "./components/Search";
-import Inspire from "./components/Inspire";
 import Home from "./components/Home";
 import DataFetching from "./components/DataFetching";
 import { Button, Navbar, Nav, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import logo from './ss-logo-bar.png'
 
 export default function App() {
- 
   return (
-
     <BrowserRouter>
       <Navbar fixed="top" bg="light" expand="lg">
         <Container fluid>
-          <Navbar.Brand href="/">SNEAKER SEEKER</Navbar.Brand>
+          <Navbar.Brand href="/">< img src={logo} class="logo img-fluid" alt="My logo" /> </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -28,11 +26,13 @@ export default function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      {/* <div className="Carousel">
+        <BootstrapCarouselComponent></BootstrapCarouselComponent>
+      </div> */}
 
       <Routes>
         <Route path="/search" element={<Search />}></Route>
         <Route path="/datafetching" element={<DataFetching />}></Route>
-        <Route path="/inspire" element={<Inspire />}></Route>
         <Route path="/" element={<Home />}></Route>
       </Routes>
       </BrowserRouter>

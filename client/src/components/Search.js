@@ -21,7 +21,24 @@ function Search() {
     colorway: "",
   });
 
-  const url = `http://localhost:3001/api?brand=${data.brand}&gender=${data.gender}&colorway=${data.colorway}`;
+  
+  let baseUrl = `https://sneaker-seaker-backend.herokuapp.com/api`
+
+  let query = []
+
+  if (data.brand !== "") {
+    query.push( `brand=${data.brand}` )
+  }
+  if (data.gender !== "") {
+    query.push( `gender=${data.gender}` )
+  }
+  if (data.colorway !== "") {
+    query.push( `colorway=${data.colorway}` )
+  }
+  let queryString = query.join("&")
+  
+
+  let url = (queryString.length === 0 ) ? baseUrl : `${baseUrl}?${queryString}`
 
   const fetchData = async (e) => {
     e.preventDefault();
@@ -74,7 +91,6 @@ function Search() {
                         <option value="AIR%20JORDAN">Under Armour</option>
                       </Form.Select>
                     </div>
-
                     <div className="container auto">
                       <Form.Select
                         className="custom-select form-select-lg"
