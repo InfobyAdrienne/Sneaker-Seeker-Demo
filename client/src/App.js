@@ -1,18 +1,13 @@
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Search from "./components/Search";
 import Results from "./components/Results";
 // import Popup from "./components/Popup";
 import DataFetching from "./components/DataFetching";
-import {
-  Button,
-  Navbar,
-  Nav,
-  Container,
-  Row,
-  Col,
-  Stack,
-} from "react-bootstrap";
+import { Button, Navbar, Nav, Container } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 // import React, { useState } from "react";
 
 import "./App.css";
@@ -44,45 +39,40 @@ export default function App() {
     //   />}
 
     <BrowserRouter>
-      <Navbar fixed="top" />
-      <Navbar bg="light" expand="lg">
+      <Navbar fixed="top" bg="light" expand="lg">
         <Container fluid>
           <Navbar.Brand href="/">SNEAKER SEEKER</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
+              class="navbar"
               className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: "100px" }}
               navbarScroll
             ></Nav>
-            <Button variant="outline-success">SEARCH</Button>
+            <Button class="nav-search" href="/search" variant="outline-success">
+              SEARCH
+            </Button>
           </Navbar.Collapse>
         </Container>
       </Navbar>
 
       <Container>
-        <Row className="justify-content-md-center">
-          <Col sm="3"></Col>
-          <Col sm="6">
-            <div class="title">
-              <h1>FIND YOUR PERFECT SNEAKERS</h1>
-            </div>
+        <div class="title">
+          <h1>FIND YOUR PERFECT SNEAKERS</h1>
+        </div>
+        <Row>
+          <Col>
             {/* <Image src="holder.js/171x180" thumbnail /> */}
             {/* <Image src="holder.js/171x180" thumbnail /> */}
-            <Stack
-              gap={2}
-              direction="horizontal"
-              className="col-md-7 mx-auto buttons-class"
-            >
-              <Button href="/search" variant="secondary">
-                I KNOW WHAT I WANT
-              </Button>
-              <Button href="/results" variant="outline-secondary">
-                INSPIRE ME
-              </Button>
-            </Stack>
+            <Button class="search-btn" href="/search" variant="secondary">
+              I KNOW WHAT I WANT
+            </Button>
           </Col>
-          <Col sm="3"></Col>
+          <Col>
+            <Button href="/results" variant="outline-success">
+              INSPIRE ME
+            </Button>
+          </Col>
         </Row>
       </Container>
 
