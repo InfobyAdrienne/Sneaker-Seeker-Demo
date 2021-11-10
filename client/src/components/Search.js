@@ -6,7 +6,10 @@ import Popup from "./Popup";
 function Search() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const [openSneaker, setOpenSneaker] = useState(false);
+
   const togglePopup = (id) => {
+    setOpenSneaker(id)
     setIsOpen(!isOpen);
   };
 
@@ -135,36 +138,41 @@ function Search() {
         </Container>
       </div>
 
-      <button onClick={togglePopup}>
-        <div>
-          <ul>
-            {sneakers.map((sneaker) => (
-              <li key={sneaker.id}>
-                <li>{sneaker.shoe} </li>
-                <li> Retail price: £{sneaker.retailPrice}</li>
-                <img src={sneaker.media.thumbUrl} alt="sneaker"/>
-
-                {/* <input type="button" value="Info" onClick={togglePopup} /> */}
-                {isOpen && (
-                  <Popup
-                    content={
-                      <>
-                        <p><b>Information</b></p>
-                        <p>Sneaker: {sneaker.shoe}</p>
-                        <p>Brand: {sneaker.brand}</p>
-                        <p>Colourway: {sneaker.colorway}</p>
-                        <p>Release Date: {sneaker.releaseDate}</p>
-                        <img src={sneaker.media.thumbUrl} alt="sneaker"/>
-                      </>
-                    }
-                    handleClose={togglePopup}
-                  />
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </button>
+      <div>
+        {/* <button onClick={togglePopup}> */}
+        <ul>
+          {sneakers.map((sneaker) => (
+            <p key={sneaker.id} {...sneaker}>
+              <li>{sneaker.shoe} </li>
+              <li> Retail price: £{sneaker.retailPrice}</li>
+              <button onClick={() => {
+                console.log(sneaker.id)
+                togglePopup(sneaker.id)
+              }}
+              >
+                <img src={sneaker.media.thumbUrl} alt="sneaker" />
+              </button>
+              {/* <input type="button" value="Info" onClick={togglePopup} /> */}
+              {isOpen && openSneaker === sneaker.id &&(
+                <Popup
+                  content={
+                    <>
+                        <b>Information</b>
+                      <p>Sneaker: {sneaker.shoe}</p>
+                      <p>Brand: {sneaker.brand}</p>
+                      <p>Colourway: {sneaker.colorway}</p>
+                      <p>Release Date: {sneaker.releaseDate}</p>
+                      <img src={sneaker.media.thumbUrl} alt="sneaker" />
+                    </>
+                  }
+                  handleClose={() => togglePopup(sneaker.id)}
+                />
+              )}
+            </p>
+          ))}
+        </ul>
+        {/* </button> */}
+      </div>
     </div>
   );
 }
