@@ -46,11 +46,11 @@ const Home = (props) => {
         </Col>
         <Col sm="3"></Col>
       </Row>
-    </Container>
-</div>
-<div className="pt-5">
+      </Container>
+      <div className="pt-5">
         <BootstrapCarouselComponent></BootstrapCarouselComponent>
       </div>
+</div>
 
   );
 };
