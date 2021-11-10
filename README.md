@@ -33,7 +33,7 @@ $ cd Test-React-Express
 ```
 $ cd server
 $ npm install #(requires node to be installed)
-$ npm start #(web app will open in the browser at localhost:3000)
+$ npm start #(server will be listening on localhost:3001)
 ```
 3. Start the front end server 
 ```
@@ -41,7 +41,7 @@ In a new terminal window:
 $ cd ..
 $ cd client
 $ npm install
-$ npm start #(web app will open in the browser at localhost:3001)
+$ npm start #(web app will open in the browser at localhost:3000)
 ``` 
 
 <h2>Our objectives as a team</h2>
