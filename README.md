@@ -84,7 +84,7 @@ So that I can go through the results
 ```
 
 
-<h2>Wireframes - MVP Outlined in Red</h2>
+<h2>Wireframes - <em>MVP outlined in red</em></h2>
 
 
 <h3 align="center">
