@@ -1,8 +1,9 @@
-import React from "react";
-import { Button, Container, Row, Col, Stack } from "react-bootstrap";
+import React from 'react';
+import { Button, Container } from "react-bootstrap";
+import { Row, Col, Stack } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../App.css";
 import BootstrapCarouselComponent from "./BootstrapCarouselComponent";
-
 
 const Home = (props) => {
   var array = [
@@ -19,9 +20,8 @@ const Home = (props) => {
   console.log(randomItem)
    
   return (
-
  <div className="mx-auto">
-    <Container style={{ backgroundImage: "url(/trainers.jpg)" }}>
+    <Container>
       <Row className="justify-content-md-center">
         <Col sm="3"></Col>
         <Col sm="6">
@@ -33,12 +33,12 @@ const Home = (props) => {
             direction="horizontal"
             className="col-md-7 mx-auto buttons-class"
           >
-            <Button href="/search" variant="outline-secondary">
+            <Button href="/search" variant="outline-success btn-lg">
               I KNOW WHAT I WANT
             </Button>
             <Button
               onClick={() => window.open(randomItem) }
-              variant="outline-secondary"
+              variant="outline-success btn-lg"
             >
               INSPIRE ME
             </Button>

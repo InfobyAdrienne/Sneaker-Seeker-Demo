@@ -63,18 +63,14 @@ function Search() {
     <body>
       <div>
         <div>
-          <Container class="Container">
+          <Container className="Container">
             <Row>
-              <Form class="pt-4">
-                <Col class="right-col">
-                  {/* <img src="" alt="Trainers" /> */}
-                </Col>
-
-                <Col class="left-col">
+              <Form>
+              <Col className="column">
                   <form>
-                    <div className="container p-4">
+                    <div className="container auto">
                       <Form.Select
-                        className="custom-select"
+                        className="custom-select form-select-lg"
                         onChange={(e) => handle(e)}
                         id="brand"
                         value={data.brand}
@@ -95,10 +91,9 @@ function Search() {
                         <option value="AIR%20JORDAN">Under Armour</option>
                       </Form.Select>
                     </div>
-
-                    <div className="container p-4">
+                    <div className="container auto">
                       <Form.Select
-                        className="custom-select"
+                        className="custom-select form-select-lg"
                         onChange={(e) => handle(e)}
                         id="gender"
                         value={data.gender}
@@ -113,9 +108,9 @@ function Search() {
                       </Form.Select>
                     </div>
 
-                    <div className="container p-4">
+                    <div className="container auto">
                       <Form.Select
-                        className="custom-select"
+                        className="custom-select form-select-lg"
                         onChange={(e) => handle(e)}
                         id="colorway"
                         value={data.colorway}
@@ -138,8 +133,8 @@ function Search() {
                     </div>
 
                     <Button
-                      class="form-btn"
-                      variant="outline-success"
+                      className="form-btn"
+                      variant="outline-success btn-lg"
                       type="Submit"
                       value="Submit"
                       onClick={(e) => fetchData(e)}
@@ -175,7 +170,7 @@ function Search() {
                       </p>
                       <p>Sneaker: {sneaker.shoe}</p>
                       <p>Brand: {sneaker.brand}</p>
-                      <p>Colourway: {sneaker.colorway}</p>
+                      <p>Colour: {sneaker.colorway}</p>
                       <p>Release Date: {sneaker.releaseDate}</p>
                       <img src={sneaker.media.thumbUrl} alt="sneaker" />
                     </>
