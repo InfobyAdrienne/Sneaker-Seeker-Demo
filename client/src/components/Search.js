@@ -118,7 +118,7 @@ function Search() {
 
                     <Button
                       className="form-btn"
-                      variant="outline-success"
+                      variant="outline-success btn-lg"
                       type="Submit"
                       value="Submit"
                       onClick={(e) => fetchData(e)}

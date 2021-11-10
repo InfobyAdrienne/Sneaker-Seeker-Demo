@@ -18,10 +18,10 @@ const Home = (props) => {
           direction="horizontal"
           className="col-md-7 mx-auto buttons-class"
         >
-          <Button href="/search" variant="outline-success">
+          <Button href="/search" variant="outline-success btn-lg">
             I KNOW WHAT I WANT
           </Button>
-          <Button href="/inspire" variant="outline-success">
+          <Button href="/inspire" variant="outline-success btn-lg">
             INSPIRE ME
           </Button>
         </Stack>
