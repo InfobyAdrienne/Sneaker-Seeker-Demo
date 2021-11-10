@@ -48,14 +48,14 @@ function Search() {
         <div>
           <Container class="Container">
             <Row>
-              <Form>
+              <Form class="pt-4">
                 <Col class="right-col">
                   {/* <img src="" alt="Trainers" /> */}
                 </Col>
 
                 <Col class="left-col">
                   <form>
-                    <div className="container p-5">
+                    <div className="container p-4">
                       <Form.Select
                         className="custom-select"
                         onChange={(e) => handle(e)}
@@ -79,7 +79,7 @@ function Search() {
                       </Form.Select>
                     </div>
 
-                    <div className="container p-5">
+                    <div className="container p-4">
                       <Form.Select
                         className="custom-select"
                         onChange={(e) => handle(e)}
@@ -96,7 +96,7 @@ function Search() {
                       </Form.Select>
                     </div>
 
-                    <div className="container p-5">
+                    <div className="container p-4">
                       <Form.Select
                         className="custom-select"
                         onChange={(e) => handle(e)}
