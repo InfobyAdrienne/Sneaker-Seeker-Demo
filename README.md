@@ -46,9 +46,9 @@ $ npm start #(web app will open in the browser at localhost:3000)
 
 <h2>Our Team Objectives</h2>
 1. Create a safe and supportive learning environment<br>
-2. Build our confidence with JavaScript and become familiar with React<br>
+2. Build our confidence with JavaScript and learn how to use React<br>
 3. Be led by Test Driven Development<br>
-4. Learn how to select, implement and use an API<br>
+4. Learn how to select, implement and fully integrate an API<br>
 5. Create an sleek user interface<br>
 
 <h2>MVP User Stories</h2>
