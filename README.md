@@ -83,11 +83,16 @@ I want to be able to see results on one page
 So that I can go through the results
 ```
 
+
 <h2>Domain Models & Wireframes</h2>
+
+
+<h3 align="center">
+  
+  
 ![Domain Models & Wireframes](https://user-images.githubusercontent.com/61777002/141203173-9bd15141-7366-4d04-9ecf-cbc8517605e7.png)
+  
+  
+</h3>
 
-
-<h2>Process of development</h2>
-
-<h2>What we would do next</h2>
 
