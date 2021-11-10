@@ -51,9 +51,9 @@ function Search() {
               <Form>
               <Col className="column">
                   <form>
-                    <div className="container p-5">
+                    <div className="container auto">
                       <Form.Select
-                        className="custom-select"
+                        className="custom-select form-select-lg"
                         onChange={(e) => handle(e)}
                         id="brand"
                         value={data.brand}
@@ -75,9 +75,9 @@ function Search() {
                       </Form.Select>
                     </div>
 
-                    <div className="container p-5">
+                    <div className="container auto">
                       <Form.Select
-                        className="custom-select"
+                        className="custom-select form-select-lg"
                         onChange={(e) => handle(e)}
                         id="gender"
                         value={data.gender}
@@ -92,9 +92,9 @@ function Search() {
                       </Form.Select>
                     </div>
 
-                    <div className="container p-5">
+                    <div className="container auto">
                       <Form.Select
-                        className="custom-select"
+                        className="custom-select form-select-lg"
                         onChange={(e) => handle(e)}
                         id="colorway"
                         value={data.colorway}
