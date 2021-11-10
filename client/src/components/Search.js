@@ -140,11 +140,10 @@ function Search() {
 
       <div>
         {/* <button onClick={togglePopup}> */}
-        <ul>
           {sneakers.map((sneaker) => (
             <p key={sneaker.id} {...sneaker}>
-              <li>{sneaker.shoe} </li>
-              <li> Retail price: £{sneaker.retailPrice}</li>
+              <p>{sneaker.shoe} </p>
+              <p> Retail price: £{sneaker.retailPrice}</p>
               <button onClick={() => {
                 console.log(sneaker.id)
                 togglePopup(sneaker.id)
@@ -157,7 +156,9 @@ function Search() {
                 <Popup
                   content={
                     <>
+                      <p>
                         <b>Information</b>
+                      </p>
                       <p>Sneaker: {sneaker.shoe}</p>
                       <p>Brand: {sneaker.brand}</p>
                       <p>Colourway: {sneaker.colorway}</p>
@@ -170,7 +171,6 @@ function Search() {
               )}
             </p>
           ))}
-        </ul>
         {/* </button> */}
       </div>
     </div>
