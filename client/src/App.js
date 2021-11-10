@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Search from "./components/Search";
-import Inspire from "./components/Inspire";
 import Home from "./components/Home";
 import DataFetching from "./components/DataFetching";
 import { Button, Navbar, Nav, Container } from "react-bootstrap";
@@ -54,7 +53,6 @@ export default function App() {
       <Routes>
         <Route path="/search" element={<Search />}></Route>
         <Route path="/datafetching" element={<DataFetching />}></Route>
-        <Route path="/inspire" element={<Inspire />}></Route>
         <Route path="/" element={<Home />}></Route>
       </Routes>
     </BrowserRouter>
