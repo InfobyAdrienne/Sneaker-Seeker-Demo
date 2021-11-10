@@ -1,7 +1,7 @@
 <h1 align="center">
   <img width="494" alt="sneakerseekerlogo" src="https://user-images.githubusercontent.com/61777002/141202460-10c6cb3b-edd4-4860-bdc9-77658537a884.png">
 <br></h1>
-<h4 align="center", font="italics" ><em>A full-stack web app that searches the latest footwear trends, so you don't have to.</em></h4>
+<h4 align="center", font="italics" ><em>A discovery and inspiration app for sneakerheads. </em></h4>
 
 ![Screenshot 2021-11-10 at 22 11 38](https://user-images.githubusercontent.com/61777002/141202165-1a954eb0-f325-4421-a243-ad9dbcac020d.png)
 
@@ -9,7 +9,7 @@
 
 [![Adrienne](https://img.icons8.com/nolan/25/github.png)](https://github.com/InfobyAdrienne) Adrienne [![Ifrah](https://img.icons8.com/nolan/25/github.png)](https://github.com/Ifrahhssn) Ifrah [![Laura](https://img.icons8.com/nolan/25/github.png)](https://github.com/LauraMaddaluno) Laura [![Leah](https://img.icons8.com/nolan/25/github.png)](https://github.com/leahcolleen) Leah [![Luke](https://img.icons8.com/nolan/25/github.png)](https://github.com/99ltaylor) Luke [![Tomisin](https://img.icons8.com/nolan/25/github.png)](https://github.com/TomisinJ) Tomisin 
 
-<h2>Technologies</h2>
+<h2>Full-stack Technologies</h2>
 <br>
 <p>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a>
@@ -18,7 +18,7 @@
 <a href="https://jasmine.github.io/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/jasmine/jasmine-icon.svg" alt="jasmine" width="40" height="40"/> </a> 
 </p>
 
-<h2>How to use</h2>
+<h2>How to Use</h2>
 This app is fully deployed on Heroku at https://sneaker-seaker-frontend.herokuapp.com/<br>
 OR install the code and run locally:
 <br>
@@ -44,14 +44,14 @@ $ npm install
 $ npm start #(web app will open in the browser at localhost:3000)
 ``` 
 
-<h2>Our team objectives</h2>
+<h2>Our Team Objectives</h2>
 1. Create a safe and supportive learning environment<br>
 2. Build our confidence with JavaScript and become familiar with React<br>
 3. Be led by Test Driven Development<br>
 4. Learn how to select, implement and use an API<br>
 5. Create an sleek user interface<br>
 
-<h2>MVP user stories</h2>
+<h2>MVP User Stories</h2>
 
 ```
 As a user
@@ -84,7 +84,7 @@ So that I can go through the results
 ```
 
 
-<h2>Wireframes - MVP outlined in red</h2>
+<h2>Wireframes - MVP Outlined in Red</h2>
 
 
 <h3 align="center">
