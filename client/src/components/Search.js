@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Col, Form, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+// import { useNavigate } from 'react-router-dom';
 
 function Search() {
   const [sneakers, setSneakers] = useState([]);
@@ -30,6 +31,14 @@ function Search() {
     setData(newdata);
     console.log(newdata);
   }
+
+  // const navigate = useNavigate();
+
+  // const routeChange = () =>{ 
+  //   navigate('/results')
+  // }
+
+  // onClick={routeChange}
 
   return (
     <div>
@@ -114,7 +123,7 @@ function Search() {
                   </Form.Select>
                 </div>
 
-                <Button variant="primary" type="Submit" value="Submit" onClick={(e) => fetchData(e)}>
+                <Button variant="outline-secondary" type="Submit" value="Submit" onClick={(e) => fetchData(e)}>
                   Submit
                 </Button>
               </form>

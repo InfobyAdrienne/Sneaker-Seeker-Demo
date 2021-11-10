@@ -1,15 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Search from "./components/Search";
 import Results from "./components/Results";
+import Home from "./components/Home";
 import DataFetching from "./components/DataFetching";
 import {
   Button,
   Navbar,
   Nav,
   Container,
-  Row,
-  Col,
-  Stack,
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -34,35 +32,10 @@ export default function App() {
         </Container>
       </Navbar>
 
-      <Container>
-        <Row className="justify-content-md-center">
-          <Col sm="3"></Col>
-          <Col sm="6">
-            <div class="title">
-              <h1>FIND YOUR PERFECT SNEAKERS</h1>
-            </div>
-            {/* <Image src="holder.js/171x180" thumbnail /> */}
-            {/* <Image src="holder.js/171x180" thumbnail /> */}
-            <Stack
-              gap={2}
-              direction="horizontal"
-              className="col-md-7 mx-auto buttons-class"
-            >
-              <Button href="/search" variant="secondary">
-                I KNOW WHAT I WANT
-              </Button>
-              <Button href="/results" variant="outline-secondary">
-                INSPIRE ME
-              </Button>
-            </Stack>
-          </Col>
-          <Col sm="3"></Col>
-        </Row>
-      </Container>
-
       <Routes>
         <Route path="/search" element={<Search />}></Route>
         <Route path="/results" element={<Results />}></Route>
+        <Route path="/home" element={<Home />}></Route>
         <Route path="/datafetching" element={<DataFetching />}></Route>
       </Routes>
     </BrowserRouter>
