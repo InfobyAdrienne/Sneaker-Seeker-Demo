@@ -128,6 +128,16 @@ So that I can go through the results
 <img width="1428" alt="Screenshot 2021-11-11 at 20 14 10" src="https://user-images.githubusercontent.com/61777002/141363124-dc71fc49-651b-4cbc-911a-d1065b553c4b.png">
 
 
+<h2>What Went Well</h2>
 
+* Great communication / learning environment,
+* Learnt a new framework - React,
+* Learnt how to integrate an API,
+* Easy to use interface,
+* Fully embraced the Agile process.
 
+<h2>Challenges / Key Learning </h2>
 
+* The tech stack - the whole team learning a new framework (React) from scratch,
+* Database or web scraping -> new use of an API - selecting, integrating and manipulating the data,
+* Time management - time boxing and forecasting how long tasks would take.
