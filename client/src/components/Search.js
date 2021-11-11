@@ -3,6 +3,8 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 import Popup from "./Popup";
+// import Cards from "./Cards";
+import './Card.css';
 
 function Search() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,24 +23,22 @@ function Search() {
     colorway: "",
   });
 
-  
-  let baseUrl = `https://sneaker-seaker-backend.herokuapp.com/api`
+  let baseUrl = `https://sneaker-seaker-backend.herokuapp.com/api`;
 
-  let query = []
+  let query = [];
 
   if (data.brand !== "") {
-    query.push( `brand=${data.brand}` )
+    query.push(`brand=${data.brand}`);
   }
   if (data.gender !== "") {
-    query.push( `gender=${data.gender}` )
+    query.push(`gender=${data.gender}`);
   }
   if (data.colorway !== "") {
-    query.push( `colorway=${data.colorway}` )
+    query.push(`colorway=${data.colorway}`);
   }
-  let queryString = query.join("&")
-  
+  let queryString = query.join("&");
 
-  let url = (queryString.length === 0 ) ? baseUrl : `${baseUrl}?${queryString}`
+  let url = queryString.length === 0 ? baseUrl : `${baseUrl}?${queryString}`;
 
   const fetchData = async (e) => {
     e.preventDefault();
@@ -66,7 +66,7 @@ function Search() {
           <Container className="Container">
             <Row>
               <Form>
-              <Col className="column">
+                <Col className="column">
                   <form>
                     <div className="container auto">
                       <Form.Select
@@ -148,19 +148,22 @@ function Search() {
           </Container>
         </div>
 
-        <div>
+        <div className='cards'>
+        <div className="cards__container">
+            <div className="cards__wrapper">
           {sneakers.map((sneaker) => (
             <p key={sneaker.id} {...sneaker}>
-              <p>{sneaker.shoe} </p>
-              <p> Retail price: £{sneaker.retailPrice}</p>
-              <button
+              
+              <button className="shoe_button"
                 onClick={() => {
                   console.log(sneaker.id);
                   togglePopup(sneaker.id);
-                }}
-              >
+                }}>
+                <p>{sneaker.shoe} </p>
+                <p> Retail price: £{sneaker.retailPrice}</p>
                 <img src={sneaker.media.thumbUrl} alt="sneaker" />
               </button>
+              
               {isOpen && openSneaker === sneaker.id && (
                 <Popup
                   content={
@@ -181,6 +184,8 @@ function Search() {
             </p>
           ))}
         </div>
+      </div>
+      </div>
       </div>
     </body>
   );

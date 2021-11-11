@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Container } from "react-bootstrap";
-import { Row, Col, Stack } from "react-bootstrap";
+import { Row, Stack } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 import BootstrapCarouselComponent from "./BootstrapCarouselComponent";
