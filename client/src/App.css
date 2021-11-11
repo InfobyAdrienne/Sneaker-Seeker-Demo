@@ -49,6 +49,7 @@ h1 {
   height: 100vh;
   top: 0;
   left: 0;
+  
 }
 
 .box {
@@ -61,6 +62,12 @@ h1 {
   background: #fff;
   border-radius: 4px;
   padding: 20px;
-  border: 1px solid #999;
   overflow: auto;
+  border: 5px solid green;
+  box-shadow: 20px 20px 20px rgb(177, 194, 181);
+}
+
+.close-icon {
+  border: 1px solid green;
+  box-shadow: 20px 20px 20px rgb(177, 194, 181);
 }
