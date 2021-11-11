@@ -11,7 +11,7 @@ const Home = (props) => {
     "https://www.goat.com/collections/just-dropped",
     "https://hypebeast.com/footwear",
     "https://www.complex.com/sneakers/",
-    "https://www.nike.com/gb/launch?s=upcoming", //Snkrs
+    "https://www.nike.com/gb/launch?s=upcoming",
     "https://www.complex.com/sneakers/biggest-sneaker-drops-complexcon-2021/",
     "https://www.complex.com/sneakers/2016/12/air-jordan-xi-space-jam-shows-sneaker-culture-mainstream-now",
     "https://www.complex.com/sneakers/air-jordan-release-dates/",
@@ -25,8 +25,6 @@ const Home = (props) => {
  <div className="mx-auto">
     <Container>
       <Row className="justify-content-md-center">
-        {/* <Col sm="3"></Col>
-        <Col sm="6"> */}
           <div class="title">
             <h1>FIND YOUR PERFECT SNEAKERS</h1>
           </div>
@@ -45,8 +43,6 @@ const Home = (props) => {
               INSPIRE ME
             </Button>
           </Stack>
-        {/* </Col>
-        <Col sm="3"></Col> */}
       </Row>
       </Container>
       <div className="pt-5">
