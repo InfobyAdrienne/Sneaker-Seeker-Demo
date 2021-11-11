@@ -13,6 +13,19 @@ h1 {
   padding-top: 50px;
 }
 
+/* HOME */
+.carousel {
+  padding: 8rem;
+  height: 35rem;
+}
+
+.carousel-img {
+  display: block;
+  margin: auto;
+  max-width: 50%;
+  max-height: 50%;
+}
+
 /* SEARCH */
 .shoe_button {
   background: white;
