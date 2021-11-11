@@ -11,7 +11,7 @@ import logo from './ss-logo-bar.png'
 export default function App() {
   return (
     <BrowserRouter>
-      <Navbar fixed="top" bg="light" expand="lg">
+      <Navbar  className="nav" fixed="top" expand="lg">
         <Container fluid>
           <Navbar.Brand href="/">< img src={logo} class="logo img-fluid" alt="My logo" /> </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -26,9 +26,6 @@ export default function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      {/* <div className="Carousel">
-        <BootstrapCarouselComponent></BootstrapCarouselComponent>
-      </div> */}
 
       <Routes>
         <Route path="/search" element={<Search />}></Route>

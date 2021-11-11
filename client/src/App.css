@@ -1,4 +1,8 @@
 /* APP */
+.nav {
+  border-bottom: 2px solid green;
+  background-color: white;
+}
 
 .logo {
   max-width: 20%;
@@ -8,8 +12,6 @@ h1 {
   text-align: center;
   padding-top: 50px;
 }
-
-/* HOME */
 
 /* SEARCH */
 .container {
@@ -67,8 +69,6 @@ h3 {
   transform: translate(-50%, 345%);
   float: center;
 }
-
-/* INSPIRE*/
 
 /* Popup style */
 .popup-box {
