@@ -164,9 +164,9 @@ function Search() {
                   console.log(sneaker.id);
                   togglePopup(sneaker.id);
                 }}>
-                <p>{sneaker.shoe} </p>
+                <img src={sneaker.media.thumbUrl} alt="sneaker" /><br></br>
+                <b>{sneaker.shoe} </b>
                 <p> Retail price: £{sneaker.retailPrice}</p>
-                <img src={sneaker.media.thumbUrl} alt="sneaker" />
               </button>
               
               {isOpen && openSneaker === sneaker.id && (
