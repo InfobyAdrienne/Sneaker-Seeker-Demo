@@ -5,13 +5,16 @@
 <h4 align="center", font="italics" ><em>A discovery and inspiration app for sneakerheads. </em></h4>
 
 <p align="center">
-<img src="https://media.giphy.com/media/lNrtXrSafYAK847Spw/giphy.gif" alt="animated1" />
+<img src="https://media.giphy.com/media/lNrtXrSafYAK847Spw/giphy.gif" alt="animation1"/>
 </p>
 <p align="center">
-<img src="https://media.giphy.com/media/zie1M26nT9z6NAxlUI/giphy.gif" alt="animated1" />
+<img src=https://media.giphy.com/media/Q6z4DKFNLL8TCcczFH/giphy.gif alt="animation2"/>
 </p>
 <p align="center">
-<img src="https://media.giphy.com/media/ah0I97xCGfCrme9ICp/giphy.gif" alt="animated1" />
+<img src="https://media.giphy.com/media/l6OsyJUd2frvH8SG7D/giphy.gif" alt="animation3" />
+</p>
+<p align="center">
+<img src="https://media.giphy.com/media/ah0I97xCGfCrme9ICp/giphy.gif" alt="animation3" />
 </p>
 
 <h2>Contributors</h2>
