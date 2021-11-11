@@ -1,9 +1,18 @@
 <h1 align="center">
   <img width="494" alt="sneakerseekerlogo" src="https://user-images.githubusercontent.com/61777002/141202460-10c6cb3b-edd4-4860-bdc9-77658537a884.png">
 <br></h1>
+
 <h4 align="center", font="italics" ><em>A discovery and inspiration app for sneakerheads. </em></h4>
 
-![Screenshot 2021-11-10 at 22 11 38](https://user-images.githubusercontent.com/61777002/141202165-1a954eb0-f325-4421-a243-ad9dbcac020d.png)
+<p align="center">
+<img src="https://media.giphy.com/media/lNrtXrSafYAK847Spw/giphy.gif" alt="animated1" />
+</p>
+<p align="center">
+<img src="https://media.giphy.com/media/zie1M26nT9z6NAxlUI/giphy.gif" alt="animated1" />
+</p>
+<p align="center">
+<img src="https://media.giphy.com/media/ah0I97xCGfCrme9ICp/giphy.gif" alt="animated1" />
+</p>
 
 <h2>Contributors</h2>
 
@@ -94,5 +103,27 @@ So that I can go through the results
   
   
 </h3>
+
+<h2>Homepage</h2>
+
+<img width="1424" alt="Screenshot 2021-11-11 at 20 11 01" src="https://user-images.githubusercontent.com/61777002/141362443-3fc06786-ec0a-46ee-8b41-cd46bf441aae.png">
+
+<h2>Search Form</h2>
+
+<img width="1426" alt="Screenshot 2021-11-11 at 20 12 41" src="https://user-images.githubusercontent.com/61777002/141362619-8942bdad-1344-49cc-a7e8-29a9ffb87b59.png">
+
+
+<h2>Search Results</h2>
+
+<img width="1427" alt="Screenshot 2021-11-11 at 20 13 40" src="https://user-images.githubusercontent.com/61777002/141362752-b96fb3fe-253e-4d91-a036-6a45493e31ad.png">
+
+
+<h2>Sneaker Details</h2>
+
+
+<img width="1428" alt="Screenshot 2021-11-11 at 20 14 10" src="https://user-images.githubusercontent.com/61777002/141363124-dc71fc49-651b-4cbc-911a-d1065b553c4b.png">
+
+
+
 
 
