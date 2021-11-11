@@ -65,10 +65,13 @@ function Search() {
         <div>
           <Container className="Container">
             <Row>
-              <Form>
+              <Form className="container auto">
               <Col className="column">
-                  <form>
-                    <div className="container auto">
+                  <form >
+                    <div>
+                      <h3>SELECT YOUR STYLE</h3>
+                    </div>
+                    <div className="dropdown-brand">
                       <Form.Select
                         className="custom-select form-select-lg"
                         onChange={(e) => handle(e)}
@@ -91,7 +94,7 @@ function Search() {
                         <option value="AIR%20JORDAN">Under Armour</option>
                       </Form.Select>
                     </div>
-                    <div className="container auto">
+                    <div className="dropdown">
                       <Form.Select
                         className="custom-select form-select-lg"
                         onChange={(e) => handle(e)}
@@ -99,7 +102,7 @@ function Search() {
                         value={data.gender}
                       >
                         <option hidden value="">
-                          Catergory
+                          Category
                         </option>
                         <option value="MEN">Men</option>
                         <option value="WOMEN">Women</option>
@@ -108,7 +111,7 @@ function Search() {
                       </Form.Select>
                     </div>
 
-                    <div className="container auto">
+                    <div className="dropdown-colour">
                       <Form.Select
                         className="custom-select form-select-lg"
                         onChange={(e) => handle(e)}
@@ -130,17 +133,19 @@ function Search() {
                         <option value="BROWN">Brown</option>
                         <option value="GREY">Grey</option>
                       </Form.Select>
+                      <div className="apply-button">
+                        <Button
+                          className="form-btn"
+                          variant="outline-success btn-lg"
+                          type="Submit"
+                          value="Submit"
+                          onClick={(e) => fetchData(e)}
+                        >Apply
+                      </Button>
+                    </div>
                     </div>
 
-                    <Button
-                      className="form-btn"
-                      variant="outline-success btn-lg"
-                      type="Submit"
-                      value="Submit"
-                      onClick={(e) => fetchData(e)}
-                    >
-                      Apply
-                    </Button>
+
                   </form>
                 </Col>
               </Form>
