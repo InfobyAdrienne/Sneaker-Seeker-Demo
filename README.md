@@ -40,6 +40,7 @@ $ cd Test-React-Express
 2. Start the back end server 
 ```
 $ cd server
+$ nvm use
 $ npm install #(requires node to be installed)
 $ npm start #(server will be listening on localhost:3001)
 ```
@@ -47,6 +48,7 @@ $ npm start #(server will be listening on localhost:3001)
 ```
 In a new terminal window: 
 $ cd ..
+$ nvm use
 $ cd client
 $ npm install
 $ npm start #(web app will open in the browser at localhost:3000)
