@@ -63,7 +63,7 @@ function Search() {
     <body>
       <div>
         <div>
-          <Container className="Container">
+          <Container className="container">
             <Row>
               <Form className="container auto">
               <Col className="column">
@@ -140,7 +140,7 @@ function Search() {
                           type="Submit"
                           value="Submit"
                           onClick={(e) => fetchData(e)}
-                        >Apply
+                        >APPLY
                       </Button>
                     </div>
                     </div>
