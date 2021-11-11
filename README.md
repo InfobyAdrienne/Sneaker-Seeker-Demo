@@ -27,7 +27,7 @@
 </p>
 
 <h2>How to Use</h2>
-This app is fully deployed on Heroku at https://sneaker-seaker-frontend.herokuapp.com/<br>
+This app is fully deployed on Heroku at https://sneaker-seeker-app.herokuapp.com/<br>
 OR install the code and run locally:
 <br>
 <br>
