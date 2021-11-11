@@ -63,7 +63,7 @@ function Search() {
     <body>
       <div>
         <div>
-          <Container className="Container">
+          <Container className="container">
             <Row>
               <Form className="container auto">
               <Col className="column">
