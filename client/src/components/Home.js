@@ -45,7 +45,7 @@ const Home = (props) => {
           </Stack>
       </Row>
       </Container>
-      <div className="pt-5">
+      <div className="Carousel">
         <BootstrapCarouselComponent></BootstrapCarouselComponent>
       </div>
 </div>
