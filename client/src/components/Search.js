@@ -140,7 +140,7 @@ function Search() {
                           type="Submit"
                           value="Submit"
                           onClick={(e) => fetchData(e)}
-                        >Apply
+                        >APPLY
                       </Button>
                     </div>
                     </div>
