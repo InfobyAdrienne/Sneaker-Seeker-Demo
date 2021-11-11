@@ -87,6 +87,7 @@ h3 {
   height: 100vh;
   top: 0;
   left: 0;
+  
 }
 
 .box {
@@ -99,10 +100,18 @@ h3 {
   background: #fff;
   border-radius: 4px;
   padding: 20px;
-  border: 1px solid #999;
   overflow: auto;
+  border-radius: 9px;
+  border: 2px solid rgb(28, 131, 8);
+}
+
+
+.close-icon {
+  border-radius: 9px;
+  border: 2px solid rgb(28, 131, 8);
 }
 
 .buttons-class {
   margin-top: 16px;
 }
+
