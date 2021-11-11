@@ -13,12 +13,27 @@ h1 {
   padding-top: 50px;
 }
 
+.button-align {
+  padding: 5px;
+  position: static;
+  justify-content: center;
+  /* top: 50%; */
+  /* padding-left: 40%; */
+}
+
+.button-pad {
+  margin-left: 10px;
+  width: 270px;
+}
+
+/* col-md-7 mx-auto buttons-class */
+
 /* SEARCH */
 .shoe_button {
   background: white;
   width: 100%;
-  /* border: 3px solid rgb(118, 190, 118); */
-  box-shadow: 3px 3px 3px grey;
+  border: 3px solid rgb(255, 255, 255);
+  /* box-shadow: 3px 3px 3px grey; */
 
 }
 
