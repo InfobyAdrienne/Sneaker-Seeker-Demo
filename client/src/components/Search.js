@@ -99,10 +99,10 @@ function Search() {
                         value={data.gender}
                       >
                         <option hidden value="">
-                          Gender
+                          Catergory
                         </option>
-                        <option value="MEN">Man</option>
-                        <option value="WOMEN">Woman</option>
+                        <option value="MEN">Men</option>
+                        <option value="WOMEN">Women</option>
                         <option value="UNISEX">Unisex</option>
                         <option value="CHILD">Junior</option>
                       </Form.Select>
