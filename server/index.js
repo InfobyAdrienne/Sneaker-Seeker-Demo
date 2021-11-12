@@ -35,7 +35,7 @@ app.get('/api', (incomingRequest, outgoingResponse) => {
 	if (incomingRequest.query.gender !== undefined) {
 	filters.gender = incomingRequest.query.gender;
 	   }
-	if (incomingRequest.query.colorway!== undefined) {
+	if (incomingRequest.query.colorway !== undefined) {
 		filters.colorway = incomingRequest.query.colorway;
 	   }
 		rapidApiRequest.query(filters);

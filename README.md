@@ -1,9 +1,21 @@
 <h1 align="center">
   <img width="494" alt="sneakerseekerlogo" src="https://user-images.githubusercontent.com/61777002/141202460-10c6cb3b-edd4-4860-bdc9-77658537a884.png">
 <br></h1>
+
 <h4 align="center", font="italics" ><em>A discovery and inspiration app for sneakerheads. </em></h4>
 
-![Screenshot 2021-11-10 at 22 11 38](https://user-images.githubusercontent.com/61777002/141202165-1a954eb0-f325-4421-a243-ad9dbcac020d.png)
+<p align="center">
+<img src="https://media.giphy.com/media/lNrtXrSafYAK847Spw/giphy.gif" alt="animation1"/>
+</p>
+<p align="center">
+<img src=https://media.giphy.com/media/Q6z4DKFNLL8TCcczFH/giphy.gif alt="animation2"/>
+</p>
+<p align="center">
+<img src="https://media.giphy.com/media/l6OsyJUd2frvH8SG7D/giphy.gif" alt="animation3" />
+</p>
+<p align="center">
+<img src="https://media.giphy.com/media/ah0I97xCGfCrme9ICp/giphy.gif" alt="animation3" />
+</p>
 
 <h2>Contributors</h2>
 
@@ -15,11 +27,10 @@
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a>
 <a href="https://nodejs.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> 
 <a href="https://heroku.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> </a> 
-<a href="https://jasmine.github.io/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/jasmine/jasmine-icon.svg" alt="jasmine" width="40" height="40"/> </a> 
 </p>
 
 <h2>How to Use</h2>
-This app is fully deployed on Heroku at https://sneaker-seaker-frontend.herokuapp.com/<br>
+This app is fully deployed on Heroku at https://sneaker-seeker-app.herokuapp.com/<br>
 OR install the code and run locally:
 <br>
 <br>
@@ -32,6 +43,7 @@ $ cd Test-React-Express
 2. Start the back end server 
 ```
 $ cd server
+$ nvm use
 $ npm install #(requires node to be installed)
 $ npm start #(server will be listening on localhost:3001)
 ```
@@ -39,6 +51,7 @@ $ npm start #(server will be listening on localhost:3001)
 ```
 In a new terminal window: 
 $ cd ..
+$ nvm use
 $ cd client
 $ npm install
 $ npm start #(web app will open in the browser at localhost:3000)
@@ -95,4 +108,36 @@ So that I can go through the results
   
 </h3>
 
+<h2>Homepage</h2>
 
+<img width="1424" alt="Screenshot 2021-11-11 at 20 11 01" src="https://user-images.githubusercontent.com/61777002/141362443-3fc06786-ec0a-46ee-8b41-cd46bf441aae.png">
+
+<h2>Search Form</h2>
+
+<img width="1426" alt="Screenshot 2021-11-11 at 20 12 41" src="https://user-images.githubusercontent.com/61777002/141362619-8942bdad-1344-49cc-a7e8-29a9ffb87b59.png">
+
+
+<h2>Search Results</h2>
+
+<img width="1427" alt="Screenshot 2021-11-11 at 20 13 40" src="https://user-images.githubusercontent.com/61777002/141362752-b96fb3fe-253e-4d91-a036-6a45493e31ad.png">
+
+
+<h2>Sneaker Details</h2>
+
+
+<img width="1428" alt="Screenshot 2021-11-11 at 20 14 10" src="https://user-images.githubusercontent.com/61777002/141363124-dc71fc49-651b-4cbc-911a-d1065b553c4b.png">
+
+
+<h2>What Went Well</h2>
+
+* Great communication / learning environment,
+* Learnt a new framework - React,
+* Learnt how to integrate an API,
+* Easy to use interface,
+* Fully embraced the Agile process.
+
+<h2>Challenges / Key Learning </h2>
+
+* The tech stack - the whole team learning a new framework (React) from scratch,
+* Database or web scraping -> new use of an API - selecting, integrating and manipulating the data,
+* Time management - time boxing and forecasting how long tasks would take.
