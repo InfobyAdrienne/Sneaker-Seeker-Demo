@@ -136,7 +136,7 @@ So that I can go through the results
 * Easy to use interface,
 * Fully embraced the Agile process.
 
-<h2>Challenges / Key Learning </h2>
+<h2>Challenges / Key Oppurtunities for Growth </h2>
 
 * The tech stack - the whole team learning a new framework (React) from scratch,
 * Database or web scraping -> new use of an API - selecting, integrating and manipulating the data,
