@@ -12,9 +12,9 @@ app.get('/products/:id', function (req, res, next) {
   res.json({msg: 'This is CORS-enabled for all origins!'})
 })
  
-app.listen(80, function () {
-  console.log('CORS-enabled web server listening on port 80')
-})
+// app.listen(80, function () {
+//   console.log('CORS-enabled web server listening on port 80')
+// })
 
 
 app.get('/api', (incomingRequest, outgoingResponse) => {
@@ -34,6 +34,9 @@ app.get('/api', (incomingRequest, outgoingResponse) => {
 	   }
 	if (incomingRequest.query.gender !== undefined) {
 	filters.gender = incomingRequest.query.gender;
+	   }
+	if (incomingRequest.query.colorway!== undefined) {
+		filters.colorway = incomingRequest.query.colorway;
 	   }
 		rapidApiRequest.query(filters);
 
